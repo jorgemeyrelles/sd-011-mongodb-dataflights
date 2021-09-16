@@ -7,4 +7,7 @@ use('dataFlights');
 // db.voos.find( { "empresa.nome": "AZUL" } ).limit(10);
 
 // Desafio 3
-db.voos.count( { "empresa.nome": "AZUL" } );
+// db.voos.count( { "empresa.nome": "AZUL" } );
+
+// Desafio 4
+db.voos.count( { "empresa.nome": "GOL" } );

@@ -54,4 +54,7 @@ db.voos.find();
 // db.voos.count({ natureza: "Internacional" });
 
 // Desafio 18
-db.voos.find({"passageiros.pagos": {$gt: 7000}}, {"vooId": 1, "mes": 1, "ano": 1, "_id": 0}).limit(1);
+// db.voos.find({"passageiros.pagos": {$gt: 7000}}, {"vooId": 1, "mes": 1, "ano": 1, "_id": 0}).limit(1);
+
+// Desafio 19
+db.voos.find({litrosCombustivel: {$exists: true },},{"vooId": 1,"_id": 0},).limit(1);

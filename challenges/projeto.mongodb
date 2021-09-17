@@ -18,4 +18,10 @@ db.voos.find();
 // db.voos.find({}, {"vooId": 1, "_id": 0}).limit(3).skip(9);
 
 // Desafio 6
-db.voos.find({"vooId": 756807}, {"empresa.sigla": 1, "empresa.nome": 1, "passageiros": 1, "_id": 0});
+// db.voos.find({"vooId": 756807}, {"empresa.sigla": 1, "empresa.nome": 1, "passageiros": 1, "_id": 0});
+
+// Desafio 7
+// db.voos.count({"ano": {$lt: 2017}});
+
+// Desafio 8
+

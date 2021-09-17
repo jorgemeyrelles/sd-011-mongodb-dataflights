@@ -48,4 +48,10 @@ db.voos.find();
 // db.voos.count({"decolagens": {$gt: 20}});
 
 // Desafio 16
-db.voos.count({"natureza": "Internacional"});
+// db.voos.count({"natureza": "Internacional"});
+
+// Desafio 17
+// db.voos.count({ natureza: "Internacional" });
+
+// Desafio 18
+db.voos.find({"passageiros.pagos": {$gt: 7000}}, {"vooId": 1, "mes": 1, "ano": 1, "_id": 0}).limit(1);

@@ -30,4 +30,7 @@ db.voos.find();
 // db.voos.count({"ano": {$in: [2017, 2018]}});
 
 // Desafio 10
-db.voos.find({$and: [{"empresa.nome": "GOL"}, {"ano": 2017}]}, {"vooId": 1, "empresa.nome": 1, "aeroportoOrigem.nome": 1, "aeroportoDestino.nome": 1, "mes": 1, "ano": 1, "_id": 0}).limit(10);
+// db.voos.find({$and: [{"empresa.nome": "GOL"}, {"ano": 2017}]}, {"vooId": 1, "empresa.nome": 1, "aeroportoOrigem.nome": 1, "aeroportoDestino.nome": 1, "mes": 1, "ano": 1, "_id": 0}).limit(10);
+
+// Desafio 11
+db.voos.count({"aeroportoDestino.pais": {$ne: "ESTADOS UNIDOS"}});

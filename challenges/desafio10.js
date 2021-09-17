@@ -1,4 +1,4 @@
-db.voos.fins(
+db.voos.find(
 { "empresa.nome": "GOL", ano: 2017 },
 { _id: 0,
 vooId: 1,

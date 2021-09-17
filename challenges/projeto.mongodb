@@ -42,4 +42,7 @@ db.voos.find();
 // db.voos.count({"aeroportoDestino.continente": {$nin: ["EUROPA", "ÁSIA", "OCEANIA"]}});
 
 // Desafio 14
-db.voos.count({"aeroportoOrigem.pais": {$ne: "BRASIL"}});
+// db.voos.count({"aeroportoOrigem.pais": {$ne: "BRASIL"}});
+
+// Desafio 15
+db.voos.count({"decolagens": {$gt: 20}});

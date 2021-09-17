@@ -60,4 +60,7 @@ db.voos.find();
 // db.voos.find({litrosCombustivel: {$exists: true },},{"vooId": 1,"_id": 0},).limit(1);
 
 // Desafio 20
-db.voos.find({rtk: {$exists: false },},{"vooId": 1,"_id": 0},).limit(1);
+// db.voos.find({rtk: {$exists: false },},{"vooId": 1,"_id": 0},).limit(1);
+
+// Desafio 21
+db.voos.find({litrosCombustivel: {$gte: 1000 },},{"vooId": 1,"_id": 0},).limit(1);

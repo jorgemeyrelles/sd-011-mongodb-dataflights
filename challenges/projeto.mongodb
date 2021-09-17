@@ -36,7 +36,8 @@ db.voos.find();
 // db.voos.count({"aeroportoDestino.pais": {$ne: "ESTADOS UNIDOS"}});
 
 // Desafio 12
-db.voos.count({"aeroportoDestino.pais": {$in: ["BRASIL", "ARGENTINA", "CHILE"]}});
-// Desafio 13
+// db.voos.count({"aeroportoDestino.pais": {$in: ["BRASIL", "ARGENTINA", "CHILE"]}});
 
+// Desafio 13
+db.voos.count({"aeroportoDestino.continente": {$nin: ["EUROPA", "ÁSIA", "OCEANIA"]}});
 

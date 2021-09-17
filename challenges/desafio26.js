@@ -1,1 +1,1 @@
-db.voos.deleteMany({ "empresa.nome": "GOL", "passageiros.pagos": { $in: [5, 6, 7, 8, 9, 10] } }).deletedCount;
+db.voos.find({ "empresa.nome": "GOL", "passageiros.pagos": { $gt: 4, $lt: 11 } });

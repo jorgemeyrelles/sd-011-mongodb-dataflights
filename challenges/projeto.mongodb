@@ -63,4 +63,11 @@ db.voos.find();
 // db.voos.find({rtk: {$exists: false },},{"vooId": 1,"_id": 0},).limit(1);
 
 // Desafio 21
-db.voos.find({litrosCombustivel: {$gte: 1000 },},{"vooId": 1,"_id": 0},).limit(1);
+// db.voos.find({litrosCombustivel: {$gte: 1000 },},{"vooId": 1,"_id": 0},).limit(1);
+
+// Desafio 22
+db.voos.find({$and: [{ "aeroportoOrigem.sigla": { $eq: "SBGR" } },
+    { "aeroportoDestino.sigla": { $eq: "KJFK" } }, 
+      { $or: [{ "empresa.nome": { $eq: "DELTA AIRLINES" } },
+        { "empresa.nome": { $eq: "AMERICAN AIRLINES" } },
+      ] }, ] }, { vooId: 1, _id: 0 }).limit(1);

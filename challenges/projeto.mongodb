@@ -24,4 +24,4 @@ db.voos.find();
 // db.voos.count({"ano": {$lt: 2017}});
 
 // Desafio 8
-
+db.voos.count({"ano": {$gt: 2016}});

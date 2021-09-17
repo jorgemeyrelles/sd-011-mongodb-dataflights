@@ -2,29 +2,32 @@ use('dataFlights');
 
 db.voos.find();
 
-// Desafio 1
-db.voos.count();
+// // Desafio 1
+// db.voos.count();
 
-// Desafio 2
-db.voos.find( { "empresa.nome": "AZUL" } ).limit(10);
+// // Desafio 2
+// db.voos.find( { "empresa.nome": "AZUL" } ).limit(10);
 
-// Desafio 3
-db.voos.count( { "empresa.nome": "AZUL" } );
+// // Desafio 3
+// db.voos.count( { "empresa.nome": "AZUL" } );
 
-// Desafio 4
-db.voos.count( { "empresa.nome": "GOL" } );
+// // Desafio 4
+// db.voos.count( { "empresa.nome": "GOL" } );
 
-// Desafio 5
-db.voos.find({}, {"vooId": 1, "_id": 0}).limit(3).skip(9);
+// // Desafio 5
+// db.voos.find({}, {"vooId": 1, "_id": 0}).limit(3).skip(9);
 
-// Desafio 6
-db.voos.find({"vooId": 756807}, {"empresa.sigla": 1, "empresa.nome": 1, "passageiros": 1, "_id": 0});
+// // Desafio 6
+// db.voos.find({"vooId": 756807}, {"empresa.sigla": 1, "empresa.nome": 1, "passageiros": 1, "_id": 0});
 
-// Desafio 7
-db.voos.count({"ano": {$lt: 2017}});
+// // Desafio 7
+// db.voos.count({"ano": {$lt: 2017}});
 
-// Desafio 8
-db.voos.count({"ano": {$gt: 2016}});
+// // Desafio 8
+// db.voos.count({"ano": {$gt: 2016}});
 
-// Desafio 9
-db.voos.count({"ano": {$in: [2017, 2018]}});
+// // Desafio 9
+// db.voos.count({"ano": {$in: [2017, 2018]}});
+
+// Desafio 10
+db.voos.find({$and: [{"empresa.nome": "GOL"}, {"ano": 2017}]}, {"vooId": 1, "empresa.nome": 1, "aeroportoOrigem.nome": 1, "aeroportoDestino.nome": 1, "mes": 1, "ano": 1, "_id": 0}).limit(10);

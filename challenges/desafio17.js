@@ -1,3 +1,3 @@
 db.voos.count({
-  natureza: "Doméstica",
+  natureza: "Domética",
 });

@@ -1,6 +1,6 @@
 db.voos.findOne(
   { $and: [{ litrosCombustivel: { $lt: 600 } }, 
-    { $nor: [{ "empresa.nome": "GOL" } , { "empresa.nome": "AZUL" }] },
+    { $nor: [{ "empresa.nome": "GOL" }, { "empresa.nome": "AZUL" }] },
     { litrosCombustivel: { $exists: true } }] },
   { 
     vooId: 1,

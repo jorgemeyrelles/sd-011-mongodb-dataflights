@@ -1,3 +1,3 @@
 db.voos.count(
-    { natureza: { $eq: "Internacional" } }
+    { natureza: { $eq: "Internacional" } },
     );

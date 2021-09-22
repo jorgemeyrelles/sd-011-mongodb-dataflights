@@ -1,1 +1,1 @@
-db.voos.count( { decolagens: { $gt: 20 } });
+db.voos.count({ decolagens: { $gt: 20 } });

@@ -1,0 +1,1 @@
+db.Count({"aeroportoDestino.pais": {$nin: [BRASIL, ARGENTINA, CHILE]}})

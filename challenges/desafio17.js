@@ -1,1 +1,1 @@
-db.voos.find({ "natureza": { $ne: "Doméstica" } }).count();
+db.voos.find({ natureza: { $ne: "Doméstica" } }).count();

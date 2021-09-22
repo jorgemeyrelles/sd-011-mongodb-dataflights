@@ -1,1 +1,1 @@
-db.Count({"aeroportoDestino.pais": {$nin: [BRASIL, ARGENTINA, CHILE]}})
+db.voos.count({"aeroportoDestino.pais": {$ne: "ESTADOS UNIDOS" }});

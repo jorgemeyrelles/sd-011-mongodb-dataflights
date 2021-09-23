@@ -1,1 +1,1 @@
-db.voos.find({ natureza: { $ne: "Internacional" } }).count();
+db.voos.find({ natureza: { $in: "Internacional" } }).count();

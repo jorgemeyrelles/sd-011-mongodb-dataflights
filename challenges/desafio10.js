@@ -9,6 +9,6 @@ db.voos
       mes: true,
       ano: true,
       _id: false,
-    }
+    },
   )
   .limit(10);

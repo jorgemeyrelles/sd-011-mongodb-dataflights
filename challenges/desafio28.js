@@ -1,4 +1,4 @@
-const empresaAerea = "PASSAREDO";
+const empresaAerea = "LATAM AIRLINES BRASIL";
 const voos = db.voos.find({
   $and: [
     { natureza: "Doméstica" },
